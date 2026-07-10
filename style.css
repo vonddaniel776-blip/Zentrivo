@@ -1,72 +1,131 @@
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#0f172a;
-    color:white;
+* {
+  box-sizing: border-box;
 }
 
-.container{
-    width:90%;
-    max-width:1100px;
-    margin:auto;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #020617;
+  color: white;
 }
 
-header{
-    background:#111827;
-    padding:20px 0;
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
 }
 
-header h1{
-    display:inline;
-    color:#38bdf8;
+/* Hlavička */
+
+header {
+  background: #0f172a;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
 }
 
-nav{
-    float:right;
+header h1 {
+  color: #38bdf8;
+  margin: 0;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
+nav {
+  margin-top: 15px;
 }
 
-.hero{
-    text-align:center;
-    padding:80px 20px;
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
 }
 
-.hero h2{
-    font-size:42px;
+/* Úvod */
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
 }
 
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:15px 30px;
-    background:#38bdf8;
-    color:#000;
-    text-decoration:none;
-    border-radius:10px;
-    font-weight:bold;
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:40px 0;
+.hero p {
+  font-size: 20px;
+  color: #cbd5e1;
 }
 
-.card{
-    background:#1e293b;
-    padding:20px;
-    border-radius:15px;
+/* Tlačítka */
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 35px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-footer{
-    text-align:center;
-    padding:30px;
-    background:#111827;
-    margin-top:50px;
+/* Karty */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+  padding: 40px 0;
+}
+
+.card {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #1e293b;
+}
+
+.card h3 {
+  color: #38bdf8;
+}
+
+/* Formulář */
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+}
+
+textarea {
+  height: 120px;
+}
+
+/* Paticka */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+  background: #0f172a;
+  color: #94a3b8;
+}
+
+
+/* Mobil */
+
+@media(max-width:600px){
+
+.hero h2 {
+  font-size: 30px;
+}
+
+nav a {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
 }
