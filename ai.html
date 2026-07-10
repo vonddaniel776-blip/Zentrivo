@@ -25,6 +25,11 @@
 <section class="hero">
   <div class="container">
     <h2>AI Nástroje</h2>
+    <input 
+type="text" 
+id="search" 
+placeholder="🔎 Hledat AI nástroj..."
+onkeyup="searchTools()">
     <p>Objev užitečné technologie pro práci, tvorbu a vzdělávání.</p>
   </div>
 </section>
@@ -83,6 +88,26 @@ Zjistit více
 <footer>
 <p>© 2026 Zentrivo</p>
 </footer>
+<script>
+function searchTools(){
 
+let input = document.getElementById("search").value.toLowerCase();
+
+let cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+
+let text = card.innerText.toLowerCase();
+
+if(text.includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+</script>
 </body>
 </html>
