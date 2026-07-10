@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vonddaniel776-blip.github.io/Zentrivo/sitemap.xml
