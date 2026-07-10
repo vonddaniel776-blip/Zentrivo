@@ -1,1 +1,22 @@
-console.log("Vítej na Zentrivo 🚀");
+window.onscroll = function() {
+  scrollButton();
+};
+
+function scrollButton() {
+  let button = document.getElementById("topButton");
+
+  if (button) {
+    if (document.documentElement.scrollTop > 300) {
+      button.style.display = "block";
+    } else {
+      button.style.display = "none";
+    }
+  }
+}
+
+function goTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
